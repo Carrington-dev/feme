@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block main %}
+<!--  -->
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+    <div class="container">
+
+        <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+        </ol>
+        <h2>Portfolio</h2>
+
+    </div>
+</section>
+<!-- End Breadcrumbs -->
+<section id="about" class="about">
+    <div class="container">
+
+        <div class="row justify-content-between">
+
+            <div class="col-lg-6 pt-5 pt-lg-0">
+                <h3 data-aos="fade-up">Projects </h3>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    It was on this basis that FAN had established many of its projects, which are directed at curbing the beaurocratic red tapes that prevent businesswoman from operating their businesses </p>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <!-- <i class="bx bx-receipt"></i> -->
+                        <!-- <h4>Our urgent response</h4> -->
+                        <p>A platform to register businesses with the CIPC and receive a BEE certificate and Tax clearance
+                        </p>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <!-- <i class="bx bx-cube-alt"></i> -->
+                        <!-- <h4>The platform</h4> -->
+                        <p>In response to this Karabo decided that a platform like this will protect women in the business space and will act as a vanguard for them to gain access to various information and opportunities that will allow them to operate their
+                            businesses with ease</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+                <img src="{% static '/img/about-img.svg' %}" class="img-fluid" alt="" data-aos="zoom-in">
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Check out our beautifull portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-web">Web</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>App 1</h4>
+                        <p>App</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>App 2</h4>
+                        <p>App</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Card 2</h4>
+                        <p>Card</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Web 2</h4>
+                        <p>Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>App 3</h4>
+                        <p>App</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Card 1</h4>
+                        <p>Card</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Card 3</h4>
+                        <p>Card</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="{% static '/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                        <a href="{% static '/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock main %}

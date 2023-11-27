@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block index %}
+<!--  -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>Future Females is Launching with {{ company }}</h1>
+
+
+                <h2>The learning platform, for women who know their businesses will only grow as fast as they do. </h2>
+                <div>
+                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <img src="{% static '/img/hero-img.svg' %}" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- End Hero -->
+{% endblock index %}
+<!--  -->
+{% block main %}
+<!--  -->
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+                <img src="{% static '/img/about-img.svg' %}" class="img-fluid" alt="" data-aos="zoom-in">
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+                <h3 data-aos="fade-up">Welcome to the F.A.N Club</h3>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    The increasing complexity, government red-tapes and bureaucracy that have made it quite difficult for many business women to thrive and successfully operate businesses in South Africa, has affected the entrepreneurial sector and spirit immensely due to
+                    the lack of compliance and access to information that many women who run businesses in South Africa are faced with
+                </p>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <i class="bx bx-receipt"></i>
+                        <h4>Our urgent response</h4>
+                        <p>In response, we have established the Femme Achievers Network, which is a Non-Profit Organization that aims to facilitate a platform that will assist business women in getting their businesses and institutions to be compliant. This
+                            platform is beyond an NPO,</p>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bx bx-cube-alt"></i>
+                        <h4>The platform</h4>
+                        <p>It is a home that aims to create a safe space for business women by exposing them to various opportunities such as assuring your company is compliant according to the service or product compliance requirements, funding, networking,
+                            skills, training and a mentorship</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Services</h2>
+            <p>Check out the great services we offer</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-file"></i></div>
+                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-tachometer"></i></div>
+                    <h4 class="title"><a href="">Magni Dolores</a></h4>
+                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-world"></i></div>
+                    <h4 class="title"><a href="">Nemo Enim</a></h4>
+                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Services Section -->
+
+
+
+
+{% endblock main %}

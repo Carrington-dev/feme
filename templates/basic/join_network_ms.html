@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block main %}
+
+<main id="main" data-aos="fade-in">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h2 class="font-weight-bold mt-3">NEW F.A.N Members</h2>
+
+        </div>
+    </div>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center">
+                <!-- <hr> -->
+                <p>We are delighted to see you've joined the waitlist for the NEW Future Females e-learning platform! </p>
+                <small>We are currently in the process of sending out invitations to our waitlisters, so keep an eye on your inbox and save hello@femmeachievers.org as a contact in your email inbox to make sure you don't miss your invitation! 
+
+                </small>
+                <div class="text-center">
+                    <a href="{% url 'register' %}" class="btn btn-light" data-mdb-ripple-color="blue">Try again?</a>
+                    <!-- <button type="submit" class="btn">Submit</button> -->
+                    <!-- <div class="text-center m-3"><button href="{% url 'login' %}">Sign in</button></div> -->
+                </div>
+                <!-- <div class="text-center"><button type="button" href="{% url 'password_reset' %}">Resend</button></div> -->
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

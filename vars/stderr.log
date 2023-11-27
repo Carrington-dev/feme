@@ -1,0 +1,1176 @@
+Internal Server Error: /password_reset/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\myauth\views.py", line 126, in password_reset_request
+    return render(request=request, template_name="registration/password_reset.html", context={"password_reset_form":password_reset_form, "title":"Reset your password"})
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+my_auth_tags
+static
+tz
+"GET /password_reset/ HTTP/1.1" 500 183501
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 49, in home
+    return render(request, "basic/home.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 18: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 165202
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 49, in home
+    return render(request, "basic/home.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'about' not found. 'about' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 145373
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 7, in home
+    return render(request, "myauth/home.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'about' not found. 'about' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144094
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 7, in home
+    return render(request, "myauth/home.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'portfolio' not found. 'portfolio' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 145825
+Internal Server Error: /about/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 13, in about
+    return render(request, "myauth/about.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/about.html
+"GET /about/ HTTP/1.1" 500 82422
+Internal Server Error: /portfolio/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 32, in portfolio
+    return render(request, "myauth/portfolio.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/portfolio.html
+"GET /portfolio/ HTTP/1.1" 500 81636
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 24, in contact
+    return render(request, "basic/contact.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: basic/contact.html
+"GET /contact/ HTTP/1.1" 500 82495
+Internal Server Error: /portfolio/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 32, in portfolio
+    return render(request, "basic/portfolio.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'faq' not found. 'faq' is not a valid view function or pattern name.
+"GET /portfolio/ HTTP/1.1" 500 145550
+Internal Server Error: /authsign-in/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 366, in login_view
+    return render(request, "auth_files/login.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth_files/login.html
+"GET /authsign-in/ HTTP/1.1" 500 83707
+Internal Server Error: /auth/sign-in/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 366, in login_view
+    return render(request, "auth_files/login.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth_files/login.html
+"GET /auth/sign-in/ HTTP/1.1" 500 83558
+Internal Server Error: /auth/sign-in/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 366, in login_view
+    return render(request, "myauth/login.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'log' not found. 'log' is not a valid view function or pattern name.
+"GET /auth/sign-in/ HTTP/1.1" 500 163140
+Internal Server Error: /auth/sign-in/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 366, in login_view
+    return render(request, "myauth/login.html", context)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\Crn96\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'
+"GET /auth/sign-in/ HTTP/1.1" 500 179727
+Internal Server Error: /auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 328, in profile
+    return render(request,"myauth/profile.html",context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/profile.html
+"GET /auth/profile/ HTTP/1.1" 500 92400
+Internal Server Error: /auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 328, in profile
+    return render(request,"myauth/profile.html",context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'likes' not found. 'likes' is not a valid view function or pattern name.
+"GET /auth/profile/ HTTP/1.1" 500 185392
+Internal Server Error: /auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 328, in profile
+    return render(request,"myauth/profile.html",context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'my_courses' not found. 'my_courses' is not a valid view function or pattern name.
+"GET /auth/profile/ HTTP/1.1" 500 185753
+Internal Server Error: /auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 328, in profile
+    return render(request,"myauth/profile.html",context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /auth/profile/ HTTP/1.1" 500 185924
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 149, in signup
+    send_verification_email(request, user)
+  File "D:\work\client proj\feme\myauth\tasks.py", line 40, in send_verification_email
+    msg = EmailMultiAlternatives(subject, text_content, settings.DEFAULT_FROM_EMAIL, [user.email], headers = {'Reply-To': f'{user.email}'})
+AttributeError: module 'webapp.settings' has no attribute 'DEFAULT_FROM_EMAIL'
+"POST /auth/register/ HTTP/1.1" 500 86487
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 149, in signup
+    send_verification_email(request, user)
+  File "D:\work\client proj\feme\myauth\tasks.py", line 40, in send_verification_email
+    msg = EmailMultiAlternatives(subject, text_content, settings.DEFAULT_FROM_EMAIL, [user.email], headers = {'Reply-To': f'{user.email}'})
+AttributeError: module 'webapp.settings' has no attribute 'DEFAULT_FROM_EMAIL'
+"POST /auth/register/ HTTP/1.1" 500 86450
+Internal Server Error: /auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 196, in profile
+    return render(request,"myauth/profile.html",context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profile_pic' not found. 'profile_pic' is not a valid view function or pattern name.
+"GET /auth/profile/ HTTP/1.1" 500 186486
+Internal Server Error: /auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 196, in profile
+    return render(request,"myauth/profile.html",context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profile_pic' not found. 'profile_pic' is not a valid view function or pattern name.
+"GET /auth/profile/ HTTP/1.1" 500 186486
+Internal Server Error: /subscribe/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 44, in subcribe
+    form = SubscribeForm()
+NameError: name 'SubscribeForm' is not defined
+"POST /subscribe/ HTTP/1.1" 500 72039
+Internal Server Error: /subscribe/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: basic_subscribe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 47, in subcribe
+    if form.is_valid():
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 205, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 200, in errors
+    self.full_clean()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 439, in full_clean
+    self._post_clean()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\models.py", line 498, in _post_clean
+    self.validate_unique()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\models.py", line 507, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1207, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1317, in _perform_unique_checks
+    if qs.exists():
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: basic_subscribe
+"POST /subscribe/ HTTP/1.1" 500 159144
+Internal Server Error: /subscribe/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 49, in subcribe
+    messages.success(request, "You have successfully subscribed to our newsletters!.")
+NameError: name 'messages' is not defined
+"POST /subscribe/ HTTP/1.1" 500 72571
+Internal Server Error: /subscribe/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 57, in subcribe
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+NameError: name 'HttpResponseRedirect' is not defined
+"POST /subscribe/ HTTP/1.1" 500 71867
+Internal Server Error: /auth/user-verify-existance/Ng/bic20l-b62cb53808e41ce3be2878fe928a989b/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 107, in account_verification
+    return render(request=request, template_name="registration/account_verification.html", context={"form":form, "title":"Confirm your account", "user_id":user_id})
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'account_verification' with no arguments not found. 1 pattern(s) tried: ['auth/user\\-verify\\-existance/(?P<uidb64>[^/]+)/(?P<token>[^/]+)/\\Z']
+"GET /auth/user-verify-existance/Ng/bic20l-b62cb53808e41ce3be2878fe928a989b/ HTTP/1.1" 500 178146
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 137, in signup
+    if form.is_valid():
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 205, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 200, in errors
+    self.full_clean()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 438, in full_clean
+    self._clean_form()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 459, in _clean_form
+    cleaned_data = self.clean()
+  File "D:\work\client proj\feme\myauth\forms.py", line 28, in clean
+    super.clean()
+AttributeError: type object 'super' has no attribute 'clean'
+"POST /auth/register/ HTTP/1.1" 500 91646
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 137, in signup
+    if form.is_valid():
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 205, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 200, in errors
+    self.full_clean()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 438, in full_clean
+    self._clean_form()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\forms.py", line 459, in _clean_form
+    cleaned_data = self.clean()
+  File "D:\work\client proj\feme\myauth\forms.py", line 30, in clean
+    password = self.cleaned_data['password']
+KeyError: 'password'
+"POST /auth/register/ HTTP/1.1" 500 91146
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: myauth_newuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 140, in signup
+    form.save()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\forms.py", line 143, in save
+    user.save()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: myauth_newuser.username
+"POST /auth/register/ HTTP/1.1" 500 168870
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: myauth_newuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 140, in signup
+    form.save()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\forms.py", line 143, in save
+    user.save()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: myauth_newuser.username
+"POST /auth/register/ HTTP/1.1" 500 169140
+Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: myauth_newuser.email
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\myauth\views.py", line 140, in signup
+    form.save()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\forms.py", line 143, in save
+    user.save()
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: myauth_newuser.email
+"POST /auth/register/ HTTP/1.1" 500 169086
+Internal Server Error: /join-fan-network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 113, in join_network
+    return render(request, 'basic/join_network.html',  context)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: basic/join_network.html
+"GET /join-fan-network/ HTTP/1.1" 500 85217
+Internal Server Error: /join-fan-network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 115, in join_network
+    form = NetworkForm(request.POST, instance=request.user)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\models.py", line 363, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\forms\models.py", line 105, in model_to_dict
+    opts = instance._meta
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /join-fan-network/ HTTP/1.1" 500 88009
+Internal Server Error: /join-fan-network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 124, in join_network
+    if request.user.network:
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 463, in __get__
+    raise self.RelatedObjectDoesNotExist(
+myauth.models.NewUser.network.RelatedObjectDoesNotExist: NewUser has no network.
+"POST /join-fan-network/ HTTP/1.1" 500 82727
+Internal Server Error: /join-fan-network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 124, in join_network
+    if request.user.network:
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 463, in __get__
+    raise self.RelatedObjectDoesNotExist(
+myauth.models.NewUser.network.RelatedObjectDoesNotExist: NewUser has no network.
+"POST /join-fan-network/ HTTP/1.1" 500 82723
+Internal Server Error: /update_network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 221, in update_network
+    context['form'] = form
+UnboundLocalError: local variable 'form' referenced before assignment
+"POST /update_network/ HTTP/1.1" 500 78957
+Internal Server Error: /update_network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 218, in update_network
+    context['form'] = form
+UnboundLocalError: local variable 'form' referenced before assignment
+"POST /update_network/ HTTP/1.1" 500 78957
+Internal Server Error: /update_network/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 218, in update_network
+    context['form'] = form
+UnboundLocalError: local variable 'form' referenced before assignment
+"POST /update_network/ HTTP/1.1" 500 78957
+Internal Server Error: /join-fan-network-second/
+Traceback (most recent call last):
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\work\client proj\feme\basic\views.py", line 157, in join_network_sc
+    print(request.session['new_id'])
+  File "C:\Users\Crn96\Desktop\flexy_tuta\package\senv\lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+KeyError: 'new_id'
+"POST /join-fan-network-second/ HTTP/1.1" 500 81919
